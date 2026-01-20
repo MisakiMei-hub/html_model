@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Members - 胡可课题组</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 页面标题 */
+        .page-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 40px 0 10px;
+            color: #002855;
+        }
+
+        .page-subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* 成员卡片网格 */
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 32px;
+        }
+
+        /* 单个成员卡片 */
+        .member-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 24px 22px 28px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        /* 成员照片 */
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 姓名 */
+        .member-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 4px;
+        }
+
+        /* 职称 */
+        .member-role {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 12px;
+        }
+
+        /* 简介 */
+        .member-bio {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 头部导航（与你现有页面一致） -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" class="logo">
+                <span class="site-name">胡可课题组</span>
+                <img src="images/sun.png" alt="Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="main.htm" class="nav-link">主页</a>
+                <a href="home.htm" class="nav-link">个人简介</a>
+                <a href="research.htm" class="nav-link">研究方向</a>
+                <a href="listcolumn.htm" class="nav-link">论文著作</a>
+                <a href="member.htm" class="nav-link active">成员</a>
+                <a href="news.htm" class="nav-link">新闻动态</a>
+
+            </nav>
+        </header>
+
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="main.htm">首页</a>
+            <span class="separator">&gt;</span>
+            <span class="current">成员</span>
+        </div>
+
+        <!-- 主体内容 -->
+        <main class="content">
+
+            <h1 class="page-title" style="text-align: center;">Members</h1>
+            <p class="page-subtitle" style="text-align: center;">
+                Faculty, Postdoctoral Researchers, and Graduate Students
+            </p>
+
+
+            <div class="member-grid">
+
+                <!-- 成员卡片 1 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/zhaozijian.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Zijian Zhao</div>
+                    <div class="member-role">Postdoc</div>
+                </div>
+
+                <!-- 成员卡片 2 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/tianlimei.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Limei Tian</div>
+                    <div class="member-role">Ph.D. Student</div>
+                </div>
+
+                <!-- 成员卡片 3 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/yangweijian.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Weijian Yang</div>
+                    <div class="member-role">Ph.D. Student</div>
+                </div>
+
+                <!-- 成员卡片 4 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/fanjingao.jpg" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Jingao Fan</div>
+                    <div class="member-role">Ph.D. Student</div>
+                </div>
+
+                <!-- 成员卡片 5 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/wutinghao.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Tinghao Wu</div>
+                    <div class="member-role">Ph.D. Student</div>
+                </div>
+                <!-- 成员卡片 6 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/kanghui.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Hui Kang</div>
+                    <div class="member-role">Ph.D. Student</div>
+                </div>
+                <!-- 成员卡片 7 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/huangwanran.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Wanran Huang</div>
+                    <div class="member-role">Master Student</div>
+                </div>
+                <!-- 成员卡片 8 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="images/zongshining.png" alt="Member Photo">
+                    </div>
+                    <div class="member-name">Shining Zong</div>
+                    <div class="member-role">Undergraduate Student</div>
+                </div>
+                <!-- 继续复制 member-card 即可新增成员 -->
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 同济大学. 保留所有权利.</p>
+            <p>地址：上海市杨浦区四平路1239号 | 邮编：200092</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

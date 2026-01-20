@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>研究方向 - 胡可课题组</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .research-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+
+        .research-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 40px 48px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+
+        .research-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .research-card h3 {
+            font-size: 22px;
+            color: #003366;
+            margin-bottom: 20px;
+            padding-left: 14px;
+            border-left: 5px solid #0056b3;
+        }
+
+
+        .research-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .research-card a {
+            font-weight: 500;
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .research-card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Laboratory Equipment 两图一行 */
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px 32px;
+            margin-top: 20px;
+        }
+
+        .equipment-item {
+            text-align: center;
+        }
+
+        .equipment-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 头部导航（保持一致） -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" class="logo">
+                <span class="site-name">胡可课题组</span>
+                <img src="images/sun.png" alt="Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="main.htm" class="nav-link">主页</a>
+                <a href="home.htm" class="nav-link">个人简介</a>
+                <a href="research.htm" class="nav-link active">研究方向</a>
+                <a href="listcolumn.htm" class="nav-link">论文著作</a>
+                <a href="member.htm" class="nav-link">成员</a>
+                <a href="news.htm" class="nav-link">新闻动态</a>
+            </nav>
+        </header>
+
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="main.htm">首页</a>
+            <span class="separator">&gt;</span>
+            <span class="current">研究方向</span>
+        </div>
+
+
+
+            <!-- 三分栏卡片 -->
+            <div class="research-grid">
+
+                <!-- 卡片 1 -->
+                <div class="research-card">
+                    <h3>Research Synopsis</h3>
+                    <p>
+                        Research Synopsis
+
+                        The research of our photochemistry group focuses on solar energy as one of the most promising
+                        forms of renewable energy and aims to solve the global crisis of climate change concerning our
+                        human survival. We aim to transform cheap and ubiquitous substances including H2O, CO2, N2, or
+                        lignin into valuable fuels or value-added chemicals such as H2, CO, CH3OH, NH3, etc with
+                        sunlight and some “chemical magic”. One of the most important advantages for the students being
+                        trained in our research group is getting to learn the “chemical magic”, a.k.a. the understanding
+                        of fundamental electron transfer processes through state-of-the-art spectroscopic techniques in
+                        our laboratory. Students and Postdocs in our photochemistry group will be immersed in the
+                        following research topics:<br>
+
+
+
+                        1. Energy-demanding organic photoredox catalysis and the underlying photochemistry of visible
+                        light harvesting molecular photocatalysts<br>
+
+                        2. Solar fuels production and the underlying photoinduced electron transfer mechanisms<br>
+
+                        3. Photoelectrochemical devices for artificial photosynthesis<br>
+
+
+
+                        Our independent research is also made possible through very fruitful collaborations:
+
+                        · Gerald J. Meyer, University of North Carolina at Chapel Hill (UNC), USA<br>
+
+                        · Renato N. Sampaio, University of North Carolina at Chapel Hill (UNC), USA<br>
+
+                        · Ludovic Troian-Gautier, UCLouvain, Belgian<br>
+
+                        · Matthew V. Sheridan, Soochow University, China<br>
+
+                        · Jianli Hua, East China University of Science and Technology, China<br>
+
+                        · Baojiang Jiang, Heilongjiang University, China<br>
+
+                        · Jia Guo, Fudan University, China<br>
+
+                        · Zhang-Jie Shi, Fudan University, China<br>
+                    </p>
+                </div>
+
+                <!-- 卡片 2 -->
+                <div class="research-card">
+                    <h3>Ongoing Research Projects</h3>
+                    <p>
+                        Ongoing Research Projects
+
+
+
+                        1. Consecutive Light Excitation Approach to Energy-Demanding Synthesis of Value-Added Chemicals
+
+                        Inert chemical bonds such as C-H, C-Cl, N≡N, etc. require highly reducing or oxidizing reagents
+                        (E < -2 V or> 2 V vs. SCE) to initiate chemical transformations to value-added chemicals.
+                            Excited states of typical photocatalysts such as ruthenium or iridium based metal complexes
+                            are incapable of achieving such extreme redox potentials. Our research group set out to use
+                            small organic photocatalysts that could consecutively absorb multiple photons and reach
+                            super-photooxidants or reductants. Our current achievements include using
+                            N-phenylphenothiazine (PTH) photocatalyst to do one electron oxidation of chloride and
+                            activate C(sp3)-H bonds for the synthesis of functionalized alkanes; using hybrid structure
+                            of perylene diimide (PDI) with ZrO2 nanoparticles to activate aryl C-Cl bonds or CO2
+                            reduction catalyst at low catalytic concentrations.
+                            <div class="article-figure">
+                                <img src="images/2026-01-13_194932_484.png" alt="Graphical Abstract">
+                            </div>
+
+
+                            Selected Publications:<br>
+
+                            1) Zhao, Z.; Li, J.; Yuan, W.; Cheng, D.; Ma, S.; Li, Y.;Shi, Z.; Hu, K.*, Nature-Inspired
+                            Photocatalytic Azo Bond Cleavage with Red Light. J. Am. Chem. Soc. 2024, 146, 1364-1373.<br>
+
+                            2) Zhao, Z.; Niu, F.; Li, P.; Wang, H.; Zhang, Z.; Meyer, G. J.*; Hu, K.*, Visible Light
+                            Generation of a Microsecond Long-Lived Potent Reducing Agent. J. Am. Chem. Soc. 2022, 144,
+                            7043-7047.<br>
+
+                            3) Li, P.; Deetz, A. M.; Hu, J.; Meyer, G. J.*; Hu, K.*, Chloride Oxidation by One- or
+                            Two-Photon Excitation of N-Phenylphenothiazine. J. Am. Chem. Soc. 2022, 144,
+                            17604-17610.<br>
+
+                            4) Li, P.; Bourgois, C.; Glaser, F.; De Kreijger, S.; Cadranel, A.; Troian-Gautier, L.*; Hu,
+                            K.*, Outcompeting Thermodynamics: Ion-Pairing and Coulombic Interactions to Trigger
+                            Perfluoroacetate Intra-Ionic Photooxidation for Perfluoroalkylation Reactions. J. Am. Chem.
+                            Soc. 2025, 147, 12082-12091.<br>
+
+                            5) Li, P.; Zhao, Z.; Tian, L.; Liu, R.; Wang, X.; Yang, W.; Cui, Y.-S.; Humphrey, M. G.;
+                            Zhang, C.*; Hu, K.*, Harnessing the Potent Excited-State Reductive Power of Pyrene-Modified
+                            N-Heterocyclic Carbene-Stabilized Au13 Nanoclusters for Four-Electron Nitroarene Reduction
+                            with Unity Selectivity. J. Am. Chem. Soc. 2025, 147, 44817-44824.<br>
+
+
+
+                            2. Photoelectrochemical Cells (PEC) for Artificial Photosynthesis (Liquid Sunlight)<br>
+
+                            The sun is the most abundant renewable energy upon which a sustainable society can be built.
+                            Currently, harvesting 1/7000 of the total solar energy reaching the surface of our earth
+                            will suffice the entire energy demand of our human society. Natural photosynthesis in which
+                            CO2, water, and sunlight are converted into carbohydrates and dioxygen gives us a perfect
+                            example to learn the trick of storing solar energy into high energy chemical bonds. Our
+                            research group set out to use visible light absorbing semiconductor based photoelectrodes
+                            for the construction of photoelectrochemical cells (PEC) to mimic natural photosynthesis.
+                            Our current efforts include using modified bismuth vanadate as the photoanode material for
+                            water, glycerol oxidation or organic C-H functionalization; using dye-sensitized
+                            photoelectrodes for the construction of tandem cells for total water splitting.<br>
+
+                            <div class="article-figure">
+                                <img src="images/2026-01-13_195327_590.png" alt="Graphical Abstract">
+                            </div>
+
+                            Selected Publications:<br>
+
+                            1) Hu, K.; Sampaio, R. N.; Schneider, J.; Troian-Gautier, L.; Meyer, G. J.* Perspectives on
+                            Dye Sensitization of Nanocrystalline Mesoporous Thin Films. J. Am. Chem. Soc. 2020, 142
+                            (38), 16099-16116.<br>
+
+                            2) Niu, F.; Zhou, Q.; Han, Y.; Liu, R.; Zhao, Z.; Zhang, Z.; Hu, K.*, Rapid Hole Extraction
+                            Based on Cascade Band Alignment Boosts Photoelectrochemical Water Oxidation Efficiency. ACS
+                            Catal. 2022, 12,10028-10038.<br>
+
+                            3) Niu, F.; Zhang, P.; Zhang, Z.; Zhou, Q.; Li, P.; Liu, R.; Li, W.; Hu, K.*, Ultrathin
+                            corrugated nanowire TiO2 as a versatile photoanode platform for boosting
+                            photoelectrochemical alcohol and water oxidation. J. Mater. Chem. A, 2023, 11, 4170.<br>
+
+                            4) Han, Y.; Chang, M.; Zhao, Z.; Niu, F.; Zhang, Z.; Sun, Z.; Zhang, L.; Hu, K.*, Selective
+                            Valorization of Glycerol to Formic Acid on a BiVO4 Photoanode through NiFe Phenolic
+                            Networks. ACS Appl. Mater. Interfaces 2023, 15, 11678–11690<br>
+
+                            5) Yang, W.; Li, P.; Han, Y.; Zhao, Z.; Tian, L.; Zhang, Z.; Humphrey, M. G.; Zhang, C.; Hu,
+                            K. Two-step coupled photoelectrochemical chlorination and oxygenation of C(sp3)–H bonds
+                            mediated by chlorine radicals over a modified BiVO4 photoanode. Chem. Sci. 2025, 16,
+                            20229-20238.<br>
+                    </p>
+                </div>
+
+                <!-- 卡片 3 -->
+                <div class="research-card">
+                    <h3>Laboratory Equipment</h3>
+
+                    <div class="equipment-grid">
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_195555_974.png">
+                            <p>High-speed freezing centrifuge（15,000 rpm）</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_200701_730.png">
+                            <p>Fume hoods & Schlenk Line</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_200907_627.png">
+                            <p>Tube Furnace（KEJING）</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_201025_794.png">
+                            <p>Freeze drier</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_201200_883.png">
+                            <p>Agilent Cary 60 UV–Vis Spectrophotometer</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_201343_107.png">
+                            <p>TSP2000 Transient absorption spectrometer</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_201519_976.png">
+                            <p>Agilent Cary Eclpse Fluorescence Spectrophotometer*<br>
+                                (Provided by instrument experimental platform)</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_202649_747.png">
+                            <p>Electrochemical Workstation<br>
+                                (CHI760+CHI1232)</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_203115_996.png">
+                            <p>Xenon Lamp light source (AM 1.5 G)</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_203231_311.png">
+                            <p>GC9790Plus</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_203342_799.png">
+                            <p>Laser</p>
+                        </div>
+
+                        <div class="equipment-item">
+                            <img src="images/2026-01-13_203438_912.png">
+                            <p>Perfect Light Multi-channel Photoreactor</p>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2025 同济大学. 保留所有权利.</p>
+            <p>地址：上海市杨浦区四平路1239号 | 邮编：200092</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

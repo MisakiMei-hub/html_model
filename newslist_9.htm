@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 - 胡可课题组</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .banner {
+            background: linear-gradient(120deg, #7a0019, #c41e3a);
+            color: #fff;
+            padding: 60px 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .detail-content {
+            max-width: 900px;
+            margin: 40px auto;
+            line-height: 1.9;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin: 40px 0 12px;
+            border-left: 4px solid #c41e3a;
+            padding-left: 12px;
+        }
+
+        .image-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .image-group img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a.link {
+            color: #c41e3a;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 头部导航 -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <span class="site-name">胡可课题组</span>
+                <img src="images/sun.png" alt="Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="main.htm" class="nav-link">主页</a>
+                <a href="home.htm" class="nav-link">个人简介</a>
+                <a href="research.htm" class="nav-link">研究方向</a>
+                <a href="listcolumn.htm" class="nav-link">论文著作</a>
+                <a href="member.htm" class="nav-link">成员</a>
+                <a href="news.htm" class="nav-link active">新闻动态</a>
+            </nav>
+        </header>
+
+        <!-- 面包屑 -->
+        <div class="breadcrumb">
+            <a href="main.htm">首页</a>
+            <span class="separator">&gt;</span>
+            <a href="news.htm">新闻动态</a>
+            <span class="separator">&gt;</span>
+            <span class="current">新闻详情</span>
+        </div>
+
+        <!-- 横幅 -->
+        <div class="banner">
+            <h1 style="text-align:center;">
+                恭喜杨伟健同学荣获2024年空气主份转化化学研讨会优秀墙报奖!</h1>
+            <p style="text-align:center;">
+                在2024年11月01至04日举行的空气主份转化化学研讨上，杨伟健同学参与了大会的优秀墙报评比，
+                并在优秀的作品中脱颖而出，荣获优秀墙报奖。在此特向杨伟健同学表示祝贺。
+
+
+            </p>
+        </div>
+
+        <div class="detail-content">
+
+            <div class="section-title">相关图片</div>
+            <div class="image-group" style="display:flex;align-items:center;justify-content:center;text-align:center;">
+                <img src="images/yang-qiangbao.jpg">
+            </div>
+
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2025 同济大学. 保留所有权利.</p>
+            <p>地址：上海市杨浦区四平路1239号 | 邮编：200092</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

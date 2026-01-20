@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - 胡可课题组</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sidebar {
+            position: sticky;
+            top: 24px;
+            /* 距离顶部的距离，可按需调整 */
+            align-self: flex-start;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部导航 -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <span class="site-name">胡可课题组</span>
+                <img src="images/sun.png" alt="Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="main.htm" class="nav-link">主页</a>
+                <a href="home.htm" class="nav-link active">个人简介</a>
+                <a href="research.htm" class="nav-link">研究方向</a>
+                <a href="listcolumn.htm" class="nav-link">论文著作</a>
+                <a href="member.htm" class="nav-link">成员</a>
+                <a href="news.htm" class="nav-link">新闻动态</a>
+            </nav>
+        </header>
+
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="main.htm">首页</a>
+            <span class="separator">&gt;</span>
+            <span class="current">个人简介</span>
+        </div>
+
+        <!-- 主要内容区 -->
+        <div class="main-content">
+            <!-- 左侧个人信息卡片 -->
+            <aside class="sidebar">
+                <div class="profile-card">
+                    <img src="images/huke.png" alt="个人照片" class="profile-photo">
+                    <h1 class="profile-name">胡可</h1>
+                    <p class="profile-title">教授 / 博士生导师</p>
+                    <div class="profile-info">
+                        <div class="info-item">
+                            <span class="info-label">所在单位：</span>
+                            <span class="info-value">化学科学与工程学院</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">办公地点：</span>
+                            <span class="info-value">同济大学四平路校区-南校区实训楼 406室</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">电子邮箱：</span>
+                            <span class="info-value">khu@tongji.edu.cn</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div class="quick-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <nav class="nav">
+                            <a href="main.htm" class="nav-link">主页</a>
+                            <a href="home.htm" class="nav-link">个人简介</a>
+                            <a href="research.htm" class="nav-link">研究方向</a>
+                            <a href="listcolumn.htm" class="nav-link">论文著作</a>
+                            <a href="member.htm" class="nav-link">成员</a>
+                            <a href="news.htm" class="nav-link">新闻动态</a>
+
+                        </nav>
+
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- 右侧主内容 -->
+            <main class="content">
+                <!-- 个人简介 -->
+                <section class="section">
+                    <h2 class="section-title">个人简介</h2>
+                    <div class="section-content">
+                        <p style="text-indent: 2em;">
+                            Physical Chemistry，Inorganic Chemistry，Materials Chemistry，Photochemistry, Professor
+                            Researcher, Ph. D. Supervisor
+                        </p>
+
+                        <p style="text-indent: 2em;">
+                            Ke Hu obtained B.S. from Department of Chemistry, Fudan University in 2010. He received
+                            Chemistry Ph.D. under the supervision of Prof. Gerald J. Meyer from Johns Hopkins University
+                            in 2014. He then moved to University of North Carolina at Chapel Hill for postdoctoral
+                            research where the Energy Frontier Research Center: Center for Solar Fuels was headquatered.
+                            He returned to Fudan University as the principle investigator with national young
+                            investigator awards in 2017. Dr. Ke Hu has been long engaged in the field of solar energy
+                            research with focus on the electron transfer kinetics and dynamics both in fluid solution
+                            and at the molecular sensitized semiconductor interfaces. The outstanding results will guide
+                            better design and performance of the next-generation photoelectrocatalytic water-spliting
+                            devices for solar energy conversion and storage.
+                        </p>
+
+                        <p style="text-indent: 2em;">
+                            By 2026, Dr. Ke Hu has authored more than 70 SCI indexed papers. More than 50 papers are
+                            published as the first or the corresponding author, including renowned journals such as Nat.
+                            Chem., J. Am. Chem. Soc., JACS Au., ACS Catal., etc. 
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 教育经历 -->
+                <section class="section">
+                    <h2 class="section-title">教育经历</h2>
+                    <div class="section-content">
+                        <div class="timeline-item">
+                            <span class="timeline-year">2006-2010</span>
+                            <span class="timeline-content">复旦大学，化学系，本科</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2010-2014</span>
+                            <span class="timeline-content">美国约翰霍普金斯大学，化学系，博士</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2014-2017</span>
+                            <span class="timeline-content">美国北卡罗莱纳大学教堂山分校化学系、美国能源部能源前沿研究中心、太阳能燃料中心，博士后</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 工作经历 -->
+                <section class="section">
+                    <h2 class="section-title">工作经历</h2>
+                    <div class="section-content">
+                        <div class="timeline-item">
+                            <span class="timeline-year">2017-2025</span>
+                            <span class="timeline-content">复旦大学，化学系，博士生导师，青年研究员</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2025-至今</span>
+                            <span class="timeline-content">同济大学，化学科学与工程学院，博士生导师、长聘教授</span>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 研究方向 -->
+                <section class="section">
+                    <h2 class="section-title">研究方向</h2>
+                    <div class="section-content">
+                        <ul class="research-list">
+                            <li>光引发多电子转移催化及瞬态光谱学</li>
+                            <li>光/光电催化诱导高需能反应</li>
+                            <li>人工光合成</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- 招聘信息 -->
+        <section class="section">
+            <h2 class="section-title">招聘信息</h2>
+            <div class="section-content">
+
+                <!-- 研究生招聘 -->
+                <div class="timeline-item">
+                    <span class="timeline-year">研究生</span>
+                    <span class="timeline-content">
+                        本课题组拟招收硕士研究生、博士研究生若干名<br />
+
+                        欢迎对物理化学、光化学 、电化学、光催化、光电催化、电荷转移动力学 、化学动力学等研究内容感兴趣的同学加入本课题组，课题组氛围良好，可以攻读硕士、博士学位，欢迎报考！<br />
+
+                        通讯地址：上海市杨浦区四平路1239号 同济大学四平路校区-南校区实训楼406室<br />
+
+                        电子邮件：khu@tongji.edu.cn
+                    </span>
+                </div>
+
+                <!-- 博士后招聘 -->
+                <div class="timeline-item">
+                    <span class="timeline-year">博士后</span>
+                    <span class="timeline-content">
+                        同济大学胡可教授团队博士后招聘（长期）<br />
+                        同济大学化学科学与工程学院胡可教授团队现面向海内外公开招聘博士后研究人员，课题组科研氛围浓厚、设备齐全，并与国内外多个优秀研究团队保持密切合作，为博士后提供良好的跨学科研究平台与发展空间。<br />
+                        【应聘人的博士研究方向与研究内容】<br />
+                        1．时间分辨光谱学（Time-Resolved Spectroscopy），瞬态吸收光谱（Transient Absorption Spectroscopy）<br />
+                        2．有机氧化还原光催化（Organic Photoredox Catalysis）<br />
+                        3．光电催化能源小分子（H₂O、CO₂、CH4、N₂）活化与生物质重整<br />
+                        【薪资待遇】<br />
+                        年薪不低于30万元（税前），具体面议；科研成果奖励另计；支持申报国家“博士后创新人才支持计划”“上海市超级博士后计划”等，入选后薪酬可进一步提升。<br />
+                        【应聘方式】<br />
+                        申请人请以“博士后申请-博士院校-姓名”为标题，简要地在邮件中写明研究背景、研究兴趣、个人职业规划，并附上个人简历及代表性论文发送至胡可老师邮箱:
+                        khu@tongji.edu.cn。<br />
+                        本招聘长期有效，招满为止。欢迎有志于光化学研究的青年学者加入！<br />
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2025 同济大学. 保留所有权利.</p>
+            <p>地址：上海市杨浦区四平路1239号 | 邮编：200092</p>
+        </footer>
+    </div>
+</body>
+
+</html>

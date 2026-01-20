@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* 弹窗背景 */
+    .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 999;
+    }
+
+    /* 弹窗主体 */
+    .modal-content {
+        background: #fff;
+        width: 90%;
+        max-width: 520px;
+        margin: 10% auto;
+        padding: 20px 24px;
+        border-radius: 10px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content h3 {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    /* 文本框 */
+    .modal-content textarea {
+        width: 100%;
+        height: 120px;
+        margin-top: 10px;
+        padding: 10px;
+        font-family: Consolas, monospace;
+        font-size: 14px;
+        resize: none;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+
+    /* 底部按钮 */
+    .modal-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .btn-secondary {
+        background: #eee;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- 头部导航 -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <span class="site-name">胡可课题组</span>
+                <img src="images/sun.png" alt="Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="main.htm" class="nav-link">主页</a>
+                <a href="home.htm" class="nav-link">个人简介</a>
+                <a href="research.htm" class="nav-link">研究方向</a>
+                <a href="listcolumn.htm" class="nav-link active">论文著作</a>
+                <a href="member.htm" class="nav-link">成员</a>
+                <a href="news.htm" class="nav-link">新闻动态</a>
+            </nav>
+        </header>
+
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="main.htm">首页</a>
+            <span class="separator">&gt;</span>
+            <a href="listcolumn.htm?type=publications">论文著作</a>
+            <span class="separator">&gt;</span>
+            <span class="current">文章详情</span>
+        </div>
+
+        <!-- 主要内容区 -->
+        <div class="main-content">
+            <!-- 左侧个人信息卡片 -->
+            <aside class="sidebar">
+                <div class="profile-card">
+                    <img src="images/huke.png" alt="个人照片" class="profile-photo">
+                    <h1 class="profile-name">胡可</h1>
+                    <p class="profile-title">教授 / 博士生导师</p>
+                    <div class="profile-info">
+                        <div class="info-item">
+                            <span class="info-label">所在单位：</span>
+                            <span class="info-value">化学科学与工程学院</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">办公地点：</span>
+                            <span class="info-value">同济大学四平路校区-南校区实训楼 406室</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">电子邮箱：</span>
+                            <span class="info-value">khu@tongji.edu.cn</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 相关链接 -->
+                <div class="back-link">
+                    <a href="listcolumn.htm?type=publications" class="btn-back">&laquo; 返回列表</a>
+                </div>
+            </aside>
+
+            <!-- 右侧文章详情 -->
+            <main class="content">
+                <article class="article-detail">
+                    <!-- 文章头部 -->
+                    <header class="article-header">
+                        <h1 class="article-title">Optical Intramolecular Electron Transfer in Opposite Directions through the Same Bridge
+                                That Follows Different Pathways.</h1>
+                        <div class="article-meta">
+                            <span class="meta-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                发布时间：2018-05-07
+                            </span>
+                            <span class="meta-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+
+                            </span>
+                        </div>
+
+                    </header>
+
+
+<!-- 文章基本信息 -->
+<section class="article-info">
+    <div class="info-row">
+        <label>论文作者：</label>
+        <span>
+            Piechota, E. J.; Troian-Gautier, L.; Sampaio, R. N.; Brennaman, M. K.; 
+            Hu, K.; Berlinguette, C. P.*; Meyer, G. J.*
+        </span>
+    </div>
+    <div class="info-row">
+        <label>发表期刊：</label>
+        <span>J. Am. Chem. Soc.</span>
+    </div>
+    <div class="info-row">
+        <label>期刊信息：</label>
+        <span>2018, 140 (23), 7176–7186</span>
+    </div>
+    <div class="info-row">
+        <label>DOI：</label>
+        <a href="https://doi.org/10.1021/jacs.8b02715" target="_blank">
+            10.1021/jacs.8b02715
+        </a>
+    </div>
+</section>
+
+
+                    <!-- 文章摘要 -->
+                    <section class="article-section">
+                        <h2 class="section-title">摘要</h2>
+                        <div class="section-content">
+                            <p>The electrochemical and spectroscopic properties of eight
+                                bis(tridentate) cyclometalated RuII compounds covalently linked by a phenyl- or
+                                xylyl-thiophene bridge to a pendant triphenylamine (TPA) were characterized in fluid
+                                solution and immobilized on metal oxide surfaces. Upon surface immobilization, the
+                                TPA+/0 reduction potentials of the phenyl-bridged compounds exhibited large changes,
+                                ±100 mV, relative to solution-based values, yet those observed for the xylyl-bridged
+                                compounds were relatively unchanged. The highest occupied molecular orbital of the
+                                surface-immobilized compounds was associated with either TPA or RuII, enabling the study
+                                of the electron transfer in opposite directions. Electron transfer in the mixed-valent
+                                states of the compounds was found to proceed by different optical pathways for RuII →
+                                TPA+ relative to TPA → RuIII. Mulliken–Hush analysis of intervalence charge transfer
+                                bands for the phenyl-bridged compounds revealed that the electronic coupling matrix
+                                element, HDA, was ∼950 cm–1 for RuII → TPA+, while HDA for TPA → RuIII appeared to be
+                                2500 cm–1. In contrast, the xylyl-bridged compounds were weakly coupled. A superexchange
+                                analysis, where unoccupied bridge orbitals were taken directly into account, led to a
+                                very different conclusion: HDA did not depend on the charge-transfer direction or path.
+                                The results imply that the electron-transfer direction can alter optical charge transfer
+                                pathways without influencing the electronic coupling.
+                            </p>
+                        </div>
+                    </section>
+
+
+                    <!-- 下载和引用 -->
+                    <section class="article-actions">
+                        <a href="papers/optical-intramolecular-electron-transfer-in-opposite-directions-through-the-same-bridge-that-follows-different-pathways.pdf"
+                            class="btn-action btn-primary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4m4-5l5 5m0 0l5-5m-5 5V3" />
+                            </svg>
+                            下载PDF全文
+                        </a>
+                        <a href="javascript:void(0)" class="btn-action" onclick="openModal()">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            导出引用
+                        </a>
+                    </section>
+                </article>
+            </main>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2025 同济大学. 保留所有权利.</p>
+            <p>地址：上海市杨浦区四平路1239号 | 邮编：200092</p>
+        </footer>
+    </div>
+
+    <!-- 导出引用弹窗 -->
+    <div class="modal" id="citeModal">
+        <div class="modal-content">
+            <h3>引用信息</h3>
+            <textarea readonly id="citeText"> 
+Piechota, E. J.; Troian-Gautier, L.; Sampaio, R. N.; Brennaman, M. K.; Hu, K.; Berlinguette, C. P.; Meyer, G. J. J. Am. Chem. Soc. 2018, 140, 7176–7186.
+            </textarea>
+
+            <div class="modal-actions">
+                <button class="btn-action" onclick="copyCitation()">复制</button>
+                <button class="btn-action btn-secondary" onclick="closeModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function openModal() {
+        document.getElementById("citeModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("citeModal").style.display = "none";
+    }
+
+    function copyCitation() {
+        const text = document.getElementById("citeText");
+        text.select();
+        document.execCommand("copy");
+        alert("引用已复制到剪贴板");
+    }
+</script>
+
+</html>
